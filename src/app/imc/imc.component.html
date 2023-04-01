@@ -1,0 +1,25 @@
+<body>
+    <div class="box">
+        <div class="form">
+            <h1>Calculadora-IMC</h1>
+            <div class="inputBox">
+                <input type="text" required="required" [(ngModel)]="peso">
+                <span>Insira Seu Peso</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="text" required="required" [(ngModel)]="altura">
+                <span>Insira Sua Altura</span>
+                <i></i>
+                <br>
+            </div>
+            <div class="inputBox">
+                <input type="text" readonly  [(ngModel)]="resultado + mensagem">
+                <span></span>
+                <i></i>
+                <br>
+            </div>
+            <button (click)="calcularimc()">Resultado</button>
+        </div>
+    </div>
+</body>
