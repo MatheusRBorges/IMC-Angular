@@ -94,11 +94,10 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy","options": {
-            "baseHref":"/IMC-Angular/"
+          "builder": "angular-cli-ghpages:deploy"
           }
         }
       }
     }
   }
-}
+
