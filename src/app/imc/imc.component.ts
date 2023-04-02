@@ -10,29 +10,29 @@ export class IMCComponent {
   peso: number = 0;
   altura: number = 0;
   resultado: number = 0;
-  mensagem ='';
+  mensagem = '';
 
 
   calcularimc() {
     this.resultado = this.peso / (this.altura ** 2)
-   
+
 
     if (this.resultado < 18.5) {
-      this.mensagem = 'Abaixo do Peso';
+      this.mensagem = this.resultado.toFixed(2) + ' Abaixo do Peso';
     } else if (this.resultado < 25) {
-      this.mensagem = 'Peso Normal';
+      this.mensagem = this.resultado.toFixed(2) + ' Peso Normal';
     }
     else if (this.resultado < 30) {
-      this.mensagem = 'SobrePeso';
+      this.mensagem = this.resultado.toFixed(2) + ' SobrePeso';
     }
     else if (this.resultado < 35) {
-      this.mensagem = 'Obesidade Grau I';
+      this.mensagem = this.resultado.toFixed(2) + ' Obesidade Grau I';
     }
     else if (this.resultado < 40) {
-      this.mensagem = 'Obesidade Grau II';
+      this.mensagem = this.resultado.toFixed(2) + ' Obesidade Grau II';
     }
     else {
-      this.mensagem = 'Obesidade Grau III'
+      this.mensagem = this.resultado.toFixed(2) + 'Obesidade Grau III'
     }
   }
 }
